@@ -13,9 +13,9 @@ const Index: React.FC = () => {
   const SignIn = async (values: { email: string; password: string }) => {
     try {
       const response = await auth.sign_in(values);
-      // if (response.status === 200) {
-      //   navigate("/");
-      // }
+      if (response.status === 200) {
+        navigate("/");
+      }
       console.log(response);
     } catch (error) {
       console.log(error);

@@ -12,9 +12,9 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { Button, ListItemText } from "@mui/material";
+import { ListItemText } from "@mui/material";
 import { LogOutModal } from "@modal";
 import routes from "../router/routes";
 // import Logo from "../assets/Logo.svg";
@@ -30,7 +30,7 @@ const ResponsiveDrawer: React.FC<Props> = (props) => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [isClosing, setIsClosing] = React.useState(false);
   const { pathname } = useLocation();
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   const handleDrawerClose = () => {
     setIsClosing(true);
